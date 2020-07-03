@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+}
+/* Header */
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: #000;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: default;
+  height: 44px;
+  left: 0;
+  line-height: 3.25rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header .logo {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  height: inherit;
+  line-height: inherit;
+  padding: 0 1.25rem;
+  text-decoration: none;
+}
+.header > nav > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  transition: all 0.3s ease-in-out;
+}
+.header > nav :hover {
+  color: #ffffff;
+}
+/* nav */
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.menu .links li {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+.menu .links li:first-child {
+  border: 0;
+}
+.menu .links li:nth-child(2) {
+  border: 0;
+}
+.menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #f1f1f1;
+}
+
+.menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* banner */
+
+.banner1 {
+  width: 100%;
+  height: 85%;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.banner1 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  
+}
+
+.inner1 {
+  top: 35%;
+  z-index: 1;
+  position: relative;
+  color: whitesmoke;
+}
+.banner1::after {
+  background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0.5;
+}
+
+/* Highlights*/
+.highlights {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.highlights .special h1,
+p {
+  text-align: center;
+  margin: auto auto 15px auto;
+  margin-bottom: 15px;
+  max-width: 75%;
+}
+.highlights .special h1 {
+  color: #555555;
+  padding-top: 102px;
+}
+.highlights .special p {
+  padding: 5px;
+  color: #444444;
+  padding-bottom: 102px;
+}
+.highlightsContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+.highlights .content {
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+  padding: 3rem;
+  height: 50%;
+  width: 30%;
+  margin-right: 2.5%;
+  text-align: center;
+  margin-bottom: 5em;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.content-head {
+  font-size: 1.25em;
+  text-align: center;
+}
+.content p {
+  text-align: center;
+  color: #555555;
+  font-size: 15px;
+}
+.content-head h3 {
+  font-size: 1.25rem;
+  color: #444444;
+}
+.content-head i {
+  color: #ce1b28;
+  font-size: 64px;
+}
+/* CTA */
+.wrapper {
+  font-size: 100%;
+  padding: 46px;
+  height: 56%;
+  position: relative;
+  background-color: #ce1b28;
+  background-image: linear-gradient(
+      rgba(206, 27, 40, 0.25),
+      rgba(206, 27, 40, 0.25)
+    ),
+    url(../../images/cta01.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  text-align: center;
+  z-index: 1;
+}
+
+.wrapper .wrapper-countiner h2,
+p {
+  margin: auto auto 15px auto;
+  margin-bottom: 15px;
+  max-width: 75%;
+}
+.wrapper .wrapper-countiner h2 {
+  color: #ffffff;
+  font-size: 36px;
+}
+.wrapper .wrapper-countiner p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+}
+
+/* testimonials */
+.testimonials {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url("/images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.testimonials .content1 {
+  line-height: 1.3;
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+  padding: 3rem;
+  height: 50%;
+  width: 30%;
+  margin-right: 2.5%;
+  text-align: center;
+  margin-bottom: 5em;
+  border-radius: 4px;
+}
+.testimonials .content1 .author .image img {
+  border-radius: 100%;
+  max-width: 53px;
+}
+.testimonials .content1 .author strong {
+  color: #ce1b28;
+}
+.testimonials .content1 .author {
+  display: flex;
+ align-items: center;
+}
+.testimonials .kallam h2 {
+  padding-top: 150px;
+  font-size: 36px;
+  color: #555555;
+}
+.testimonials .kallam p {
+  padding-top: 25px;
+  color: #444444;
+}
+blockquote {
+  border-left: solid 0.5rem rgba(175, 132, 132, 0.25);
+  font-style: italic;
+  margin: 0 0 2rem 0;
+  padding: 1rem 0 1rem 2rem;
+}
+/* footer */
+
+.footer {
+  text-align: center;
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 8rem 0 6rem 0;
+}
+
+.footer .footer-cont .my-footer1 {
+  display: inline-block;
+  width: 40%;
+  margin-bottom: 24px;
+}
+.footer .footer-cont .my-footer2 {
+  display: inline-block;
+  width: 30%;
+}
+.footer .footer-cont .my-footer3 {
+  display: inline-block;
+  width: 20%;
+}
+.footer ul {
+  list-style: none;
+}
+.footer  ul.alt li {
+  padding: 0.75rem 0;
+  margin: 0 80px ;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+ul.alt li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.copyright {
+  border-top: rgba(255, 255, 255, 0.25) solid 1px;
+  padding: 10px 0;
+  margin: 0 170px;
+}
+.footer h4 {
+  color: #ffffff;
+}
+.footer a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.footer a:hover {
+  color: #ce1b28;
+}
+.my-footer3 ul.plain {
+  display: inline-block;
+}
+.my-footer3 ul.plain li {
+  padding-top: 15px;
+}
+.my-footer3 ul.plain li .icon {
+
+  border-radius: 4px;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin-right: 1rem;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.my-footer1 h4,
+.my-footer2 h4,
+.my-footer3 h4 {
+  text-transform: uppercase;
+  padding-bottom: 24px;
+}
